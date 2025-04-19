@@ -4,12 +4,12 @@ import svg from "../../thirdcomponent/assets/image 41.svg";
 
 const Section6 = () => {
   return (
-    <div className="w-full mx-auto px-6 py-16 bg-white">
-      <h2 className="text-[32px] md:text-[45px] font-bold text-center mb-10 poppins-semibold">
+    <div className="w-full mx-auto px-6 py-16 bg-white text-black">
+      <h2 className="text-[32px] md:text-[45px] text-black font-bold text-center mb-10 poppins-semibold">
         Success Stories
       </h2>
 
-      <div className="relative flex flex-col md:flex-row items-center justify-between bg-white rounded-xl p-6 md:p-10 gap-8">
+      <div className="relative flex flex-col md:flex-row items-center justify-between  rounded-xl p-6 md:p-10 gap-8">
         {/* Left - Image */}
         <div className="relative flex-shrink-0 w-full max-w-[300px] md:max-w-[350px]">
           <div className="relative">
