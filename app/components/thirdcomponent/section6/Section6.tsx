@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useState } from "react";
 import customer from "../../thirdcomponent/assets/image 33.png";
 import svg from "../../thirdcomponent/assets/image 41.svg";
 
@@ -7,33 +7,37 @@ const testimonials = [
   {
     name: "Christian Barlow",
     role: "Software Engineer",
-    text: `"This might be the best ai resume builder I’ve used. Most cost $20-30 a month… For $7.99 I sent 20 resumes and got 3 interviews. Game-changer."`,
+    text: `"This might be the best ai resume builder I’ve used. Most cost $20-30 a month… For $7.99 i Sent 20 resumes and got 3 interviews. Game-changer."`,
     image: customer,
   },
   {
-    name: "Sarah Kim",
-    role: "Product Manager",
-    text: `"I used this tool and landed an interview at my dream company in less than a week!"`,
+    name: "Christian Barlow",
+    role: "Software Engineer",
+    text: `"Even with the same image — this slide rocks again!"`,
     image: customer,
   },
   {
-    name: "Alex Jordan",
-    role: "UX Designer",
-    text: `"Super simple, effective, and affordable. Definitely recommending to my friends."`,
+    name: "Christian Barlow",
+    role: "Software Engineer",
+    text: `"Repeating again with smooth fade effect!"`,
     image: customer,
   },
 ];
 
 const Section6 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const total = testimonials.length;
+  const [fade, setFade] = useState(true);
 
-  const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? total - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === total - 1 ? 0 : prev + 1));
+  const handleSlide = (direction:any) => {
+    setFade(false);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) =>
+        direction === "left"
+          ? (prevIndex - 1 + testimonials.length) % testimonials.length
+          : (prevIndex + 1) % testimonials.length
+      );
+      setFade(true);
+    }, 200); // match with transition time
   };
 
   const { name, role, text, image } = testimonials[currentIndex];
@@ -47,7 +51,7 @@ const Section6 = () => {
       <div className="relative flex flex-col md:flex-row items-center justify-center rounded-xl p-6 md:p-10 gap-12">
         {/* Left - Image */}
         <div className="relative flex-shrink-0 w-full max-w-[300px] md:max-w-[350px]">
-          <div className="relative">
+          <div className="relative transition-opacity duration-500 ease-in-out" style={{ opacity: fade ? 1 : 0 }}>
             <img
               src={image}
               alt={name}
@@ -74,28 +78,29 @@ const Section6 = () => {
         </div>
 
         {/* Right - Text Section */}
-        <div className="flex flex-col justify-between gap-10 max-w-full md:max-w-[520px] text-left">
+        <div
+          className={`flex flex-col justify-between gap-10 max-w-full md:max-w-[520px] text-left transition-opacity duration-500 ease-in-out`}
+          style={{ opacity: fade ? 1 : 0 }}
+        >
           <p className="text-gray-700 text-base md:text-[20px] leading-relaxed md:leading-[30px]">
             {text}
           </p>
 
           <div>
-            <h3 className="text-[24px] md:text-[30px] font-bold text-black">
-              {name}
-            </h3>
+            <h3 className="text-[24px] md:text-[30px] font-bold text-black">{name}</h3>
             <p className="text-[18px] md:text-[23px] text-gray-500">{role}</p>
           </div>
 
           {/* Arrows */}
-          <div className="flex justify-start mt-4 gap-4">
+          <div className="flex justify-start gap-4">
             <button
-              onClick={handlePrev}
+              onClick={() => handleSlide("left")}
               className="bg-white shadow-md p-4 md:p-6 rounded-full hover:bg-gray-100 transition cursor-pointer"
             >
               <ArrowLeft className="w-6 h-6 md:w-7 md:h-7 text-indigo-600" />
             </button>
             <button
-              onClick={handleNext}
+              onClick={() => handleSlide("right")}
               className="bg-white shadow-md p-4 md:p-6 rounded-full hover:bg-gray-100 transition cursor-pointer"
             >
               <ArrowRight className="w-6 h-6 md:w-7 md:h-7 text-indigo-600" />
