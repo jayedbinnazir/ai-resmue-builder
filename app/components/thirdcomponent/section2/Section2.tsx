@@ -10,7 +10,7 @@ import img6 from '../../thirdcomponent/assets/lines.svg'
 
 function Section2() {
 	return (
-		<div className="mx-auto text-center flex md:h-[275.98px] lg:w-[1196px] flex-col rounded-xl shadow-lg p-20 md:p-0 gap-10 md:gap-0 bg-white md:flex-row">
+		<div className="mx-auto mb-3 md:mb-0 text-center flex md:h-[275.98px] lg:w-[1196px] flex-col rounded-xl shadow-lg p-20 md:p-0 gap-10 md:gap-0 bg-white md:flex-row">
 			<div className="flex   h-full flex-1 items-center justify-center  ">
 				<div className=' flex flex-col gap-4 ' >
 				<div className=" relative m-auto h-[67.64px] w-[54.27px] bg-white">

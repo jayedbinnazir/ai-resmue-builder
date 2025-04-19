@@ -7,8 +7,8 @@ import man2 from "../../thirdcomponent/assets/man2.png";
 
 function Section3() {
     return (
-        <div className=''>
-            <section className="mx-auto w-full  h-auto pt-64 pb-20  md:px-20 flex flex-col md:flex-row items-center justify-between" style={{
+        <div className="mx-auto ">
+            <section className="mx-auto w-full px-12  h-auto pt-64 pb-20  md:px-20 flex flex-col md:flex-row items-center justify-between" style={{
                 background: 'linear-gradient(2deg, rgba(223, 228, 245, 1) 27%, rgba(245, 247, 252, 1) 50%, rgba(245, 247, 252, 1) 100%)',
             }}>
                 <div className="w-full md:w-1/2 mb-12 md:mb-0">
