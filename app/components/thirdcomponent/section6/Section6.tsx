@@ -9,7 +9,7 @@ const Section6 = () => {
         Success Stories
       </h2>
 
-      <div className="relative flex flex-col md:flex-row items-center justify-between  rounded-xl p-6 md:p-10 gap-8">
+      <div className="relative flex flex-col md:flex-row items-center justify-center   rounded-xl p-6 md:p-10 gap-12">
         {/* Left - Image */}
         <div className="relative flex-shrink-0 w-full max-w-[300px] md:max-w-[350px]">
           <div className="relative">
