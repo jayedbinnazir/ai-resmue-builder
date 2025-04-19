@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '~/components/thirdcomponent/hero/Hero.tsx'
 // import CommonWrapper from '~/components/thirdcomponent/common/CommonWrapper.tsx'
-import Section2 from '~/components/thirdcomponent/section2/Section2.tsx'
+// import Section2 from '~/components/thirdcomponent/section2/Section2.tsx'
 import Section3 from '~/components/thirdcomponent/section3/Section3.tsx'
 import Section4 from '~/components/thirdcomponent/section4/Section4.tsx'
 import Section5 from '~/components/thirdcomponent/section5/Section5.tsx'
@@ -14,7 +14,7 @@ const index = () => {
 		<div>
 			<>
 				<Hero />
-				<Section2 />
+				{/* <Section2 /> */}
 				<Section3 />
 				<Section4 />
 				<Section5 />
