@@ -5,12 +5,12 @@ import social from "../../thirdcomponent/assets/social.png";
 
 function Section7() {
   return (
-    <div className="w-full bg-[#F5F7FC] flex flex-col items-center justify-evenly py-14 px-12 md:px-16">
+    <div className="w-full bg-[#F5F7FC] flex flex-col items-center justify-evenly py-14 px-12 ">
       <h2 className="text-[32px] md:text-[45px] font-semibold font-poppins text-black text-center mb-6">
         Trusted by Professionals
       </h2>
 
-      <div className="flex flex-col gap-6 max-w-[1200px] w-full mb-10 ">
+      <div className="flex flex-col gap-6  w-full px-6 mb-10 ">
         <p className="font-inter text-[18px] md:text-[22px] leading-[28px] md:leading-[30px] text-[#757575] text-justify">
           Discover why our platform is recognized as the best AI resume builder for job seekers ready to transform their career trajectory. Our advanced AI resume technology is designed to streamline the application process, ensuring that every resume is optimized to pass ATS filters and catch the eye of recruiters.
         </p>

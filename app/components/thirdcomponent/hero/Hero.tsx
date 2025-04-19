@@ -14,7 +14,7 @@ const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-  <div className="relative mx-auto flex flex-col items-center " >
+  <div className="relative mx-auto flex flex-col items-center px-14 " >
      <div
       className="w-full h-auto min-h-screen relative"
       style={{
@@ -85,7 +85,7 @@ const Hero = () => {
               <h1 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mx-auto lg:mx-0 mt-12">
                 Land Your Next Job
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-start my-5 max-w-md mx-auto lg:mx-0">
+              <p className="text-lg  sm:text-xl md:text-2xl text-center md:text-start my-5 max-w-md mx-auto lg:mx-0">
                 Let <span className="text-[#40BEA7]">AI</span> build a resume
                 that passes the ATS and stands out to recruiters
               </p>
