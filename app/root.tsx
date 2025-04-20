@@ -679,8 +679,8 @@ function App() {
 									</div>
 								</div>
 
-								<div className="">
-									<div className="">
+								<div className="py-10">
+									<div className="px-4 sm:px-6 lg:px-8">
 										<Outlet />
 									</div>
 								</div>
