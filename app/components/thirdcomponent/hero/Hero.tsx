@@ -1,4 +1,4 @@
-import robots from "../../thirdcomponent/assets/robots.png";
+import robots from "../../thirdcomponent/assets/robot-f.png";
 // import img2 from "../../thirdcomponent/assets/Frame.png";
 import arrow from "../../thirdcomponent/assets/arw.svg";
 import bg from "../../thirdcomponent/assets/background.png";  // Import the background image

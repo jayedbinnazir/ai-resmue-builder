@@ -1,9 +1,9 @@
 import React from 'react'
 
 import right from '../../thirdcomponent/assets/right.svg'
-import girl from '../../thirdcomponent/assets/girl.png'
-import man from '../../thirdcomponent/assets/man.png'
-import man2 from '../../thirdcomponent/assets/man2.png'
+import girl from '../../thirdcomponent/assets/girl-clear.png'
+import man from '../../thirdcomponent/assets/man-clear.png'
+import man2 from '../../thirdcomponent/assets/paper-clear.png'
 import arrow from '../../thirdcomponent/assets/arw.svg'
 
 function Section3() {

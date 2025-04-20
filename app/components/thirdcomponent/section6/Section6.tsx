@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: "Christian Barlow",
     role: "Software Engineer",
-    text: `"This might be the best ai resume builder I’ve used. Most cost $20-30 a month… For $7.99 i Sent 20 resumes and got 3 interviews. Game-changer."`,
+    text: `"This might be the best ai resume builder I've used. Most cost $20-30 a month... For $7.99 i Sent 20 resumes and got 3 interviews. Game-changer."`,
     image: customer,
   },
   {
@@ -28,7 +28,7 @@ const Section6 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
-  const handleSlide = (direction:any) => {
+  const handleSlide = (direction: any) => {
     setFade(false);
     setTimeout(() => {
       setCurrentIndex((prevIndex) =>
@@ -48,7 +48,7 @@ const Section6 = () => {
         Success Stories
       </h2>
 
-      <div className="relative flex flex-col md:flex-row items-center justify-center rounded-xl p-6 md:p-10 gap-12">
+      <div className="relative flex flex-col md:flex-row items-center justify-center rounded-xl p-6 md:p-10 gap-12 max-w-[1200px] mx-auto">
         {/* Left - Image */}
         <div className="relative flex-shrink-0 w-full max-w-[300px] md:max-w-[350px]">
           <div className="relative transition-opacity duration-500 ease-in-out" style={{ opacity: fade ? 1 : 0 }}>
@@ -78,21 +78,20 @@ const Section6 = () => {
         </div>
 
         {/* Right - Text Section */}
-        <div
-          className={`flex flex-col justify-between gap-10 max-w-full md:max-w-[520px] text-left transition-opacity duration-500 ease-in-out`}
-          style={{ opacity: fade ? 1 : 0 }}
-        >
-          <p className="text-gray-700 text-base md:text-[20px] leading-relaxed md:leading-[30px]">
-            {text}
-          </p>
+        <div className="relative flex flex-col justify-between gap-10 max-w-[520px] w-full min-h-[300px]">
+          <div className="transition-opacity duration-500 ease-in-out" style={{ opacity: fade ? 1 : 0 }}>
+            <p className="text-gray-700 text-base md:text-[20px] leading-relaxed md:leading-[30px] whitespace-pre-line break-words">
+              {text}
+            </p>
 
-          <div>
-            <h3 className="text-[24px] md:text-[30px] font-bold text-black">{name}</h3>
-            <p className="text-[18px] md:text-[23px] text-gray-500">{role}</p>
+            <div className="mt-8">
+              <h3 className="text-[24px] md:text-[30px] font-bold text-black">{name}</h3>
+              <p className="text-[18px] md:text-[23px] text-gray-500">{role}</p>
+            </div>
           </div>
 
-          {/* Arrows */}
-          <div className="flex justify-start gap-4">
+          {/* Arrows - Positioned absolutely at the bottom */}
+          <div className="absolute bottom-0 left-0 flex gap-4">
             <button
               onClick={() => handleSlide("left")}
               className="bg-white shadow-md p-4 md:p-6 rounded-full hover:bg-gray-100 transition cursor-pointer"
