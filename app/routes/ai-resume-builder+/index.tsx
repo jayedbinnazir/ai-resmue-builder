@@ -9,10 +9,10 @@ import Section6 from '~/components/thirdcomponent/section6/Section6.tsx'
 import Section7 from '~/components/thirdcomponent/section7/Section7.tsx'
 import Section8 from '~/components/thirdcomponent/section8/Section8.tsx'
 
-const index = () => {
+const ResumeBuilder = () => {
 	return (
-		<div>
-			<>
+		
+			<div>
 				<Hero />
 				{/* <Section2 /> */}
 				<Section3 />
@@ -21,12 +21,9 @@ const index = () => {
 				<Section6 />
 				<Section7 />
 				<Section8 />
-			</>
-		</div>
+			</div>
+		
 	)
 }
 
-export default index
-
-// origin  https://github.com/brayanlondono13/resume-tailor-fiverr.git (fetch)
-// origin  https://github.com/brayanlondono13/resume-tailor-fiverr.git (push)
+export default ResumeBuilder

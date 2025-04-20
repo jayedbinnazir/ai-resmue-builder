@@ -274,6 +274,7 @@ const hideNavPages = [
 	'routes/_auth+/reset-password',
 	'routes/_auth+/forgot-username/index',
 	'routes/pricing+/index',
+	'routes/ai-resume-builder+/index',
 ]
 
 function App() {
@@ -336,12 +337,7 @@ function App() {
 	}
 
 	const navigation = [
-		{
-			name: 'Resume Builder', // Name of the link
-			href: '/ai-resume-builder', // The new route we just created
-			icon: DocumentTextIcon, // Use an icon for the link
-			current: path?.includes('ai-resume-builder'), // Check if the current path matches this route
-		},
+		
 		{
 			name: 'Builder',
 			href: `/builder`,
@@ -635,6 +631,14 @@ function App() {
 														className="text-primary hover:underline"
 													>
 														Pricing
+													</Link>
+												</div>
+												<div className="flex flex-1 items-center justify-end gap-x-4 self-stretch text-xl lg:gap-x-6">
+													<Link
+														to="/ai-resume-builder"
+														className="whitespace-nowrap  text-primary hover:underline"
+													>
+														Resume Builder
 													</Link>
 												</div>
 											</div>
