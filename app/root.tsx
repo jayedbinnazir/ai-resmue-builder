@@ -337,6 +337,12 @@ function App() {
 
 	const navigation = [
 		{
+			name: 'Resume Builder', // Name of the link
+			href: '/ai-resume-builder', // The new route we just created
+			icon: DocumentTextIcon, // Use an icon for the link
+			current: path?.includes('ai-resume-builder'), // Check if the current path matches this route
+		},
+		{
 			name: 'Builder',
 			href: `/builder`,
 			icon: DocumentTextIcon,
