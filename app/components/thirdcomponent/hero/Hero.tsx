@@ -20,7 +20,7 @@ const Hero = () => {
       >
         {/* Hero Section */}
         <div className="pt-24 md:pt-36   md:pb-64">
-          <div className="grid grid-cols-1 lg:grid-cols-5 items-center justify-center gap-8 px-4 ">
+          <div className="grid grid-cols-1 lg:grid-cols-5 items-center justify-center gap-8 px-18 ">
             {/* Left Side */}
             <div className="text-white lg:col-span-2 flex flex-col items-start justify-center ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mx-auto lg:mx-0 mt-12">
