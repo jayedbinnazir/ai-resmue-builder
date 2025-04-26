@@ -12,7 +12,7 @@ import Section8 from '~/components/thirdcomponent/section8/Section8.tsx'
 const ResumeBuilder = () => {
 	return (
 		// px-4 sm:px-6 lg:px-8
-			<div className='-my-10 -mx-8' >
+			<div className='-my-10 mx-auto' >
 				<Hero />
 				{/* <Section2 /> */}
 				<Section3 />

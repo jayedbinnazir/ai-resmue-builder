@@ -679,8 +679,8 @@ function App() {
 									</div>
 								</div>
 
-								<div className="py-10">
-									<div className="px-4 sm:px-6 lg:px-8">
+								<div className="py-10 mx-auto">
+									<div className="mx-au">
 										<Outlet />
 									</div>
 								</div>

@@ -2,6 +2,7 @@ import React from 'react'
 
 import arrow from "../../thirdcomponent/assets/arw.svg";
 import social from "../../thirdcomponent/assets/social.png";
+import { Link } from '@remix-run/react';
 
 function Section7() {
   return (
@@ -20,10 +21,12 @@ function Section7() {
       </div>
 
       <div className="mb-12 mt-3">
+      <Link to={"/builder"} >
       <button className="flex items-center gap-2 bg-[#40BEA7] px-4 py-4 rounded-md text-xl  font-poppins text-white mt-2 mx-auto lg:mx-0">
                 Build your AI Resume
                 <img src={arrow} alt="arrow" className="w-6 h-6" />
               </button>
+      </Link>
       </div>
         
       <div>

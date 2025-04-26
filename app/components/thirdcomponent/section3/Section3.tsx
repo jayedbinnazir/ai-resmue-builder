@@ -5,6 +5,7 @@ import girl from '../../thirdcomponent/assets/girl-clear.png'
 import man from '../../thirdcomponent/assets/man-clear.png'
 import man2 from '../../thirdcomponent/assets/paper-clear.png'
 import arrow from '../../thirdcomponent/assets/arw.svg'
+import { Link } from '@remix-run/react'
 
 function Section3() {
 	return (
@@ -52,10 +53,12 @@ function Section3() {
 						keywords in a way that still makes sense to recruiters.
 					</p>
 
+					<Link to={"/builder"} >
 					<button className="font-poppins mx-auto mt-2 flex items-center gap-2 rounded-md bg-[#40BEA7] px-4 py-4 text-xl  text-white lg:mx-0">
 						Build your AI Resume
 						<img src={arrow} alt="arrow" className="h-6 w-6" />
 					</button>
+					</Link>
 				</div>
 
 				<div className="flex w-full items-center justify-center md:w-1/2">
